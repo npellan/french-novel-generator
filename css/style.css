@@ -1,0 +1,57 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#roman {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 30px;
+    font-size: 1.2rem;
+}
+
+.button {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	font-size: 1rem;
+	font-weight:bold;
+	padding:10px 30px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    margin: 30px;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+.notes {
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    font-style: italic;
+}
