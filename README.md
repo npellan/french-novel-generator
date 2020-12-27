@@ -1,0 +1,1 @@
+# french-novel-generator
