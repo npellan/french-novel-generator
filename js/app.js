@@ -56,7 +56,18 @@ const app = {
         const verbe = app.getVerbe();
         const interaction = app.getInteraction();
         console.log(`${lieu}, ${personnage}, ${verbe[0]} ${interaction}, ${verbe[1]}`);
+        return `${lieu}, ${personnage}, ${verbe[0]} ${interaction}, ${verbe[1]}.`
+    },
+    init: () => {
+        const bouton = document.querySelector('.button');
+        bouton.addEventListener('click', app.showNovel);
+    },
+    showNovel: (event) => {
+        event.preventDefault();
+        const roman = app.getNovel();
+        const placeholder = document.querySelector('#roman');
+        placeholder.textContent = `${roman}`;
     }
 }
 
-app.getNovel();
+document.addEventListener('DOMContentLoaded', app.init);
